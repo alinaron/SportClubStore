@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient">
+
+
+    <Button
+        android:id="@+id/favorite_btn_locatii"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="300dp"
+        android:backgroundTint="@color/niceColor"
+        android:fontFamily="@font/farsan2"
+        android:text="Locații"
+        android:textAlignment="center"
+        android:textColor="@color/slogan"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/favorite_btn_competitii"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/slogan"
+        android:fontFamily="@font/farsan2"
+        android:text="Competiții"
+        android:textAlignment="center"
+        android:textColor="@color/niceColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_btn_locatii" />
+</android.support.constraint.ConstraintLayout>

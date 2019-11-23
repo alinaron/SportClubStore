@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_acasa"
+        android:icon="@drawable/acasa"
+        android:title="Acasa" />
+    <item
+        android:id="@+id/nav_locatii"
+        android:icon="@drawable/locatii"
+        android:title="Locatii" />
+    <item
+        android:id="@+id/nav_competitii"
+        android:icon="@drawable/competitii"
+        android:title="Competitii" />
+    <item
+        android:id="@+id/nav_flux"
+        android:icon="@drawable/flux"
+        android:title="Flux" />
+    <item
+        android:id="@+id/nav_magazin"
+        android:icon="@drawable/magazin"
+        android:title="Magazin" />
+</menu>

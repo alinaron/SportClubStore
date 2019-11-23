@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient">
+
+        <ImageView
+            android:id="@+id/main_page_logo"
+            android:layout_width="144dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="500dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="500dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/main_page_bine_ai_venit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginEnd="200dp"
+            android:fontFamily="@font/farsan2"
+            android:textColor="@color/alb"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_page_logo" />
+
+        <TextView
+            android:id="@+id/main_page_persoane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="200dp"
+            android:fontFamily="@font/farsan2"
+            android:text="Sportul e mai FUN când sunteți mulți!"
+            android:textColor="@color/alb"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_page_bine_ai_venit" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nested_scroll"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/main_page_persoane">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recycler_view_persoane"
+                    android:layout_marginTop="5dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/main_page_recomandari_produse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="400dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="400dp"
+            android:fontFamily="@font/farsan2"
+            android:text="Recomandări de produse"
+            android:textColor="@color/alb"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nested_scroll" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/home_produse1"
+            app:layout_constraintTop_toBottomOf="@+id/main_page_recomandari_produse">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/home_card1"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/home_produs1_poza"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:padding="0dp" />
+
+                    <TextView
+                        android:id="@+id/home_produs1_denumire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@font/farsan2"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/splash" />
+
+                    <TextView
+                        android:id="@+id/home_produs1_pret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/farsan2"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:textColor="@color/slogan" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/home_card2"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:padding="0dp"
+                        android:id="@+id/home_produs2_poza"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/home_produs2_denumire"
+                        android:fontFamily="@font/farsan2"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/splash" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:fontFamily="@font/farsan2"
+                        android:id="@+id/home_produs2_pret"
+                        android:textColor="@color/slogan" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/home_produse2"
+            app:layout_constraintTop_toBottomOf="@+id/home_produse1">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/home_card3"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:padding="0dp"
+                        android:id="@+id/home_produs3_poza"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/home_produs3_denumire"
+                        android:fontFamily="@font/farsan2"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/splash" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:fontFamily="@font/farsan2"
+                        android:id="@+id/home_produs3_pret"
+                        android:textColor="@color/slogan" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/home_card4"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:padding="0dp"
+                        android:id="@+id/home_produs4_poza"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/home_produs4_denumire"
+                        android:fontFamily="@font/farsan2"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/splash" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:fontFamily="@font/farsan2"
+                        android:id="@+id/home_produs4_pret"
+                        android:textColor="@color/slogan" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/home_produse3"
+            app:layout_constraintTop_toBottomOf="@+id/home_produse2">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/home_card5"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:padding="0dp"
+                        android:id="@+id/home_produs5_poza" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/home_produs5_denumire"
+                        android:fontFamily="@font/farsan2"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/splash" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:fontFamily="@font/farsan2"
+                        android:id="@+id/home_produs5_pret"
+                        android:textColor="@color/slogan" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/home_card6"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:padding="0dp"
+                        android:id="@+id/home_produs6_poza" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/home_produs6_denumire"
+                        android:fontFamily="@font/farsan2"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/splash" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:fontFamily="@font/farsan2"
+                        android:id="@+id/home_produs6_pret"
+                        android:textColor="@color/slogan" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/home_produse4"
+            app:layout_constraintTop_toBottomOf="@+id/home_produse3">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/home_card7"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:padding="0dp"
+                        android:id="@+id/home_produs7_poza" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/home_produs7_denumire"
+                        android:fontFamily="@font/farsan2"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/splash" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:fontFamily="@font/farsan2"
+                        android:id="@+id/home_produs7_pret"
+                        android:textColor="@color/slogan" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/home_card8"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:padding="0dp"
+                        android:id="@+id/home_produs8_poza"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:id="@+id/home_produs8_denumire"
+                        android:fontFamily="@font/farsan2"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/splash" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:fontFamily="@font/farsan2"
+                        android:id="@+id/home_produs8_pret"
+                        android:textColor="@color/slogan" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/card_view_profil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            card_view:cardCornerRadius="30dp"
+            card_view:cardPreventCornerOverlap="false"
+            android:backgroundTint="@color/slogan">
+
+        <ImageView
+            android:id="@+id/main_page_cont"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profil" />
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/main_page_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="23dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view_profil"
+            app:srcCompat="@drawable/cos_alb" />
+
+        <ImageView
+            android:id="@+id/main_page_account"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="7dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@id/card_view_profil"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cont" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificaAdresaActivity"
+    android:background="@drawable/gradient">
+    <TextView
+        android:id="@+id/modifica_tv_introduceti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="400dp"
+        android:fontFamily="@font/farsan"
+        android:text="Introduceți adresa dumneavoastră"
+        android:textColor="@color/alb"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/modifica_spinner_judet"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/alb"
+        android:popupBackground="@color/splash"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/modifica_tv_select" />
+
+    <EditText
+        android:id="@+id/modifica_oras_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:ems="13"
+        android:textAlignment="center"
+        android:textColor="@color/slogan"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:hint="Oraș *"
+        android:fontFamily="@font/farsan2"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modifica_spinner_judet" />
+
+    <EditText
+        android:id="@+id/modifica_strada_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="13"
+        android:textAlignment="center"
+        android:textColor="@color/slogan"
+        android:fontFamily="@font/farsan2"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:hint="Stradă *"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modifica_oras_et" />
+
+    <Button
+        android:id="@+id/modifica_btn_anuleaza_adr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/slogan"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/farsan2"
+        android:text="Anulează"
+        android:textColor="@color/splash"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/modifica_btn_salveaza_adr"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/modifica_btn_salveaza_adr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/splash"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/farsan2"
+        android:text="Salvează"
+        android:textColor="@color/slogan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/modifica_btn_anuleaza_adr"/>
+
+    <TextView
+        android:id="@+id/modifica_tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Selectați județul *"
+        android:textColor="@color/alb"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modifica_tv_introduceti" />
+</android.support.constraint.ConstraintLayout>

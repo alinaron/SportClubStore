@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/pers_profile_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="200dp"
+        card_view:cardCornerRadius="70dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/pers_img_profile_pic"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="200dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/pers_profile_pic" />
+
+    <TextView
+        android:id="@+id/tv_profile_nume_prenume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="200dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        card_view:layout_constraintTop_toBottomOf="@+id/tv_profile_username" />
+
+    <TextView
+        android:id="@+id/tv_profile_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/farsan2"
+        android:textAlignment="center"
+        android:textColor="@color/alb"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        card_view:layout_constraintBottom_toTopOf="@+id/tv_profile_oras_judet"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/tv_profile_nume_prenume" />
+
+    <TextView
+        android:id="@+id/tv_profile_oras_judet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="194dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="18sp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/tv_profile_bio" />
+
+    <Button
+        android:id="@+id/tv_profile_solicita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/slogan"
+        android:fontFamily="@font/farsan2"
+        android:text="URMAREșTE"
+        android:textAlignment="center"
+        android:textColor="@color/niceColor"
+        android:textSize="18sp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@id/tv_profile_oras_judet" />
+</android.support.constraint.ConstraintLayout>

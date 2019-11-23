@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgro"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tvTitlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="200dp"
+        android:fontFamily="@font/galada2"
+        android:text="SportClubStore"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="136dp"
+        android:fontFamily="@font/trade_winds2"
+        android:gravity="center"
+        android:text="Viata\n începe în \nafara zonei\n tale de \nconfort."
+        android:textColor="@color/colorAccent"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitlu" />
+
+    <Button
+        android:id="@+id/fbutton_creeaza_cont"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/slogan"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/farsan2"
+        android:text="    Creează cont    "
+        android:textColor="@color/splash"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fbutton_logheaza"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fbutton_logheaza"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/splash"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/farsan2"
+        android:text="    Loghează-te    "
+        android:textColor="@color/slogan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fbutton_creeaza_cont" />
+
+</android.support.constraint.ConstraintLayout>

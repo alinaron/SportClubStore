@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlasareComandaActivity"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/confirmare_comanda_tv_titlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Confirmare comandă"
+        android:textColor="@color/alb"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/confirmare_comanda_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Date facturare"
+        android:textColor="@color/alb"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmare_comanda_tv_date_facturare" />
+
+    <TextView
+        android:id="@+id/confirmare_comanda_tv_date_facturare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Date facturare"
+        android:textColor="@color/alb"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmare_comanda_tv_titlu" />
+
+    <TextView
+        android:id="@+id/confirmare_comanda_tv_modalitate_plata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Modalitate de plată"
+        android:textColor="@color/alb"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmare_comanda_tv_date" />
+
+    <RadioGroup
+        android:id="@+id/confirmare_comanda_rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="300dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmare_comanda_tv_modalitate_plata">
+
+        <RadioButton
+            android:id="@+id/confirmare_comanda_ramburs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/farsan2"
+            android:text="Ramburs"
+            android:textColor="@color/alb"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/confirmare_comanda_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/farsan2"
+            android:text="Online, prin card bancar"
+            android:textColor="@color/alb"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/confirmare_comanda_total_plata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Total de plată:"
+        android:textColor="@color/alb"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmare_comanda_finalizeaza_comanda"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/confirmare_comanda_suma_plata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/farsan2"
+        android:text=" lei"
+        android:textColor="@color/alb"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmare_comanda_finalizeaza_comanda"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/confirmare_comanda_finalizeaza_comanda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="@color/slogan"
+        android:fontFamily="@font/farsan2"
+        android:text="Finalizează comanda"
+        android:textAlignment="center"
+        android:textColor="@color/niceColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

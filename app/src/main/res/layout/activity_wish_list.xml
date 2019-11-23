@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WishListActivity"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/wishlist_tv_titlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="21sp"
+        android:text="Îți acordăm 5% reducere pentru toate produsele din WishList!"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/wishlist_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/wishlist_btn_sterge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wishlist_tv_titlu">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/wishlist_btn_sterge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:text="Elimină produsele din WishList"
+        android:backgroundTint="@color/slogan"
+        android:fontFamily="@font/farsan2"
+        android:textAlignment="center"
+        android:textColor="@color/niceColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/wish_list_mesaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="300dp"
+        android:text="Nu există niciun produs în lista de dorințe..."
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

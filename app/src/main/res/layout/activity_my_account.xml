@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyAccountActivity"
+    android:background="@drawable/gradient"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/my_profile_btn_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_profile_btn_setari"
+        card_view:srcCompat="@drawable/cos" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/my_profile_btn_wishlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_profile_btn_cart"
+        card_view:srcCompat="@drawable/fav_negru" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/my_profile_btn_setari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/slogan"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:srcCompat="@drawable/setari" />
+
+    <TextView
+        android:id="@+id/my_profile_tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_my_profile" />
+
+    <TextView
+        android:id="@+id/my_profile_tv_urmaritori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_profile_tv_username" />
+
+    <TextView
+        android:id="@+id/my_profile_tv_urmariti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_profile_tv_username" />
+
+    <TextView
+        android:id="@+id/my_profile_tv_nume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_profile_tv_urmariti" />
+
+    <TextView
+        android:id="@+id/my_profile_tv_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/farsan2"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/alb"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_profile_tv_nume" />
+
+    <TextView
+        android:id="@+id/my_profile_tv_telefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_profile_tv_bio" />
+
+    <TextView
+        android:id="@+id/my_profile_tv_data_nastere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_profile_tv_telefon" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_my_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="300dp"
+        card_view:cardCornerRadius="80dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/my_profile_photo_profil"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center" />
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

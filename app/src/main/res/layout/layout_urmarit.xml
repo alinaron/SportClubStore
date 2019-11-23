@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="13dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/urmarit_cv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="25dp"
+                card_view:cardCornerRadius="25dp"
+                card_view:cardPreventCornerOverlap="false">
+
+                <ImageView
+                    android:id="@+id/urmarit_poza"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/urmarit_username"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_toEndOf="@id/urmarit_cv"
+                android:fontFamily="@font/farsan2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/urmarit_sterge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@id/urmarit_username"
+                android:text="Nu mai urmări"
+                android:backgroundTint="@color/slogan"
+                android:fontFamily="@font/farsan2"
+                android:textAlignment="center"
+                android:textColor="@color/alb"
+                android:textSize="18sp"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

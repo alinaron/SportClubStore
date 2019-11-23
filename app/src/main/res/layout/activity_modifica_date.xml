@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificaDateActivity"
+    android:background="@drawable/gradient"
+    android:textAlignment="center"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/frame_modifica"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_modifica"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                card_view:cardCornerRadius="50dp"
+                card_view:cardPreventCornerOverlap="false"
+                >
+
+                <ImageView
+                    android:id="@+id/modifica_image_profile_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/loginhea2d" />
+
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/modifica_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="12"
+            android:fontFamily="@font/farsan2"
+            android:inputType="textEmailAddress"
+            android:digits="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz._-"
+            android:textAlignment="center"
+            android:textColor="@color/slogan"
+            android:textSize="20sp"
+            android:hint="Username *"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_modifica" />
+
+        <EditText
+            android:id="@+id/modifica_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="12"
+            android:fontFamily="@font/farsan2"
+            android:hint="Parolă *"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/slogan"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifica_username" />
+
+        <EditText
+            android:id="@+id/modifica_nume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/rounded_edittext"
+            android:digits=" ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-"
+            android:ems="12"
+            android:fontFamily="@font/farsan2"
+            android:hint="Nume de familie *"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/slogan"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifica_password" />
+
+        <EditText
+            android:id="@+id/modifica_prenume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/rounded_edittext"
+            android:digits=" ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-"
+            android:ems="12"
+            android:fontFamily="@font/farsan2"
+            android:hint="Prenume *"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="@color/slogan"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifica_nume" />
+
+        <EditText
+            android:id="@+id/modifica_telefon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="12"
+            android:fontFamily="@font/farsan2"
+            android:hint="Telefon *"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColor="@color/slogan"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifica_prenume" />
+
+        <TextView
+            android:id="@+id/modifica_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/rounded_edittext"
+            android:clickable="true"
+            android:ems="12"
+            android:fontFamily="@font/farsan2"
+            android:hint="Data nașterii *"
+            android:textAlignment="center"
+            android:textColor="@color/slogan"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifica_telefon" />
+
+        <TextView
+            android:id="@+id/modifica_tv_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="410dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="400dp"
+            android:fontFamily="@font/farsan2"
+            android:text="Sport practicat *"
+            android:textColor="@color/alb"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/modifica_data" />
+
+        <Spinner
+            android:id="@+id/modifica_spinner_sport"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:background="@color/alb"
+            android:popupBackground="@color/splash"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifica_tv_sport" />
+
+        <RadioGroup
+            android:id="@+id/modifica_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifica_tv_sex">
+
+            <RadioButton
+                android:id="@+id/modifica_sex_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/farsan2"
+                android:text="M"
+                android:textColor="@color/alb"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/modifica_sex_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/farsan2"
+                android:text="F"
+                android:textColor="@color/alb"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/modifica_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="14"
+            android:fontFamily="@font/farsan2"
+            android:hint="Bio"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifica_rg" />
+
+        <Button
+            android:id="@+id/modifica_btn_anuleaza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/slogan"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/farsan2"
+            android:text="Anulează"
+            android:textColor="@color/splash"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/modifica_btn_salveaza"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/modifica_btn_salveaza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/splash"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/farsan2"
+            android:text="Salvează"
+            android:textColor="@color/slogan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modifica_btn_anuleaza"/>
+
+        <TextView
+            android:id="@+id/modifica_tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="410dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="400dp"
+            android:fontFamily="@font/farsan2"
+            android:text="Sex *"
+            android:textColor="@color/alb"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifica_spinner_sport" />
+</android.support.constraint.ConstraintLayout>

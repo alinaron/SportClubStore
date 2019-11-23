@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2F77A9</color>
+    <color name="colorPrimaryDark">#063027</color>
+    <color name="colorAccent">#c6dce7</color>
+
+    <color name="slogan">#06091b</color>
+    <color name="buttoncreate">#24216e</color>
+    <color name="buttonlogin">#B3374C</color>
+    <color name="splash">#7788bb</color>
+    <color name="niceColor">#7485bb</color>
+
+    <color name="alb">#ffffff</color>
+    <color name="negru">#070707</color>
+
+
+    <color name="card_text_color">#FFFFFF</color>
+    <color name="card_label_color">#D4D9DC</color>
+    <color name="card_cvv_color">#383838</color>
+    <color name="CTA_text">#FFFFFF</color>
+    <color name="CTA_bg">#32C25E</color>
+
+    <color name="category_color">#4458c7</color>
+    <color name="pt_tine_color">#4ca4c7</color>
+</resources>

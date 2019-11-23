@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RaportComenziActivity"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/raport_titlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="300dp"
+        android:text="Raport comenzi"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/negru"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/raport_valoare_totala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Valoarea totală a comenzilor: "
+        android:textColor="@color/negru"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raport_titlu" />
+
+    <TextView
+        android:id="@+id/raport_valoare_medie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Valoarea medie a comenzilor: "
+        android:textColor="@color/negru"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raport_valoare_totala" />
+
+    <TextView
+        android:id="@+id/raport_cea_mai_scumpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/negru"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:text="Cea mai scumpă comandă: x lei"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raport_valoare_medie" />
+
+    <TextView
+        android:id="@+id/raport_cea_mai_mare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/negru"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:text="Cea mai mare comandă: x produse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raport_cea_mai_scumpa" />
+
+    <TextView
+        android:id="@+id/raport_produs_scump"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Cel mai scump produs achizitionat: x (y lei)"
+        android:textColor="@color/negru"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raport_cea_mai_mare" />
+
+    <TextView
+        android:id="@+id/raport_produs_ieftin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Cel mai ieftin produs achizitionat: x (y lei)"
+        android:textColor="@color/negru"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raport_produs_scump" />
+
+    <TextView
+        android:id="@+id/raport_modalitate_plata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/negru"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:text="Ai platit x comenzi cu cardul și y comenzi ramburs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raport_produs_ieftin"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">SportClubStore</string>
+    <string name="login_parola_uitata_tv"><u>Am uitat parola</u></string>
+    <string name="card_header">CARD</string>
+    <string name="card_number_sample">XXXX XXXX XXXX XXXX</string>
+    <string name="card_validity_label">VALID PÂNA LA</string>
+    <string name="card_validity_sample">MM/YY</string>
+    <string name="card_name_sample">POSESOR</string>
+
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <string name="card_holders_name">Nume posesor</string>
+    <string name="card_number">Număr card</string>
+    <string name="card_validity">Data expirării</string>
+    <string name="card_cvv">CVV/CVC</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="sporturi">
+        <item>Fitness</item>
+        <item>Yoga</item>
+        <item>Dans</item>
+        <item>Alergare</item>
+        <item>Tenis</item>
+        <item>Ciclism</item>
+        <item>Echitație</item>
+        <item>Înot</item>
+        <item>Baschet</item>
+        <item>Fotbal</item>
+        <item>Volei</item>
+        <item>Alpinism</item>
+        <item>Golf</item>
+        <item>Sporturi de iarnă</item>
+        <item>Vânătoare</item>
+        <item>Karate</item>
+        <item>Alt sport</item>
+    </array>
+    <array name="judete">
+        <item>Alba</item>
+        <item>Arad</item>
+        <item>Arges</item>
+        <item>Bacau</item>
+        <item>Bihor</item>
+        <item>Bistrita Nasaud</item>
+        <item>Botosani</item>
+        <item>Braila</item>
+        <item>Brasov</item>
+        <item>Bucuresti</item>
+        <item>Buzau</item>
+        <item>Calarasi</item>
+        <item>Caras Severin</item>
+        <item>Cluj</item>
+        <item>Constanta</item>
+        <item>Covasna</item>
+        <item>Dambovita</item>
+        <item>Dolj</item>
+        <item>Galati</item>
+        <item>Giurgiu</item>
+        <item>Gorj</item>
+        <item>Harghita</item>
+        <item>Hunedoara</item>
+        <item>Ialomita</item>
+        <item>Iasi</item>
+        <item>Ilfov</item>
+        <item>Maramures</item>
+        <item>Mehedinti</item>
+        <item>Mures</item>
+        <item>Neamt</item>
+        <item>Olt</item>
+        <item>Prahova</item>
+        <item>Salaj</item>
+        <item>Satu Mare</item>
+        <item>Sibiu</item>
+        <item>Suceava</item>
+        <item>Teleorman</item>
+        <item>Timis</item>
+        <item>Tulcea</item>
+        <item>Valcea</item>
+        <item>Vaslui</item>
+        <item>Vrancea</item>
+    </array>
+
+    <array name="marimi1">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+    </array>
+
+    <array name="marimi3">
+        <item>"36"</item>
+        <item>"37"</item>
+        <item>"38"</item>
+        <item>"39"</item>
+        <item>"40"</item>
+    </array>
+
+    <array name="marimi4">
+        <item>"40"</item>
+        <item>"41"</item>
+        <item>"42"</item>
+        <item>"43"</item>
+        <item>"44"</item>
+    </array>
+
+    <array name="marimi5">
+        <item>"36"</item>
+        <item>"37"</item>
+        <item>"38"</item>
+        <item>"39"</item>
+        <item>"40"</item>
+        <item>"41"</item>
+        <item>"42"</item>
+        <item>"43"</item>
+        <item>"44"</item>
+    </array>
+</resources>

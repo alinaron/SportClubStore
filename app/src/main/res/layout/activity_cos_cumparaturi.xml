@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CosCumparaturiActivity"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/cos_cumparaturi_titlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Coșul tău de cumpărături"
+        android:textColor="@color/alb"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cos_cumparaturi_niciun_produs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="300dp"
+        android:fontFamily="@font/farsan2"
+        android:text="Nu există niciun produs în coșul de cumpărături!"
+        android:textAlignment="center"
+        android:textColor="@color/alb"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/cos_cumparaturi_titlu" />
+
+    <TextView
+        android:id="@+id/cos_cumparaturi_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="Total: "
+        app:layout_constraintBottom_toTopOf="@+id/cos_cumparaturi_continua_comanda"
+        android:fontFamily="@font/farsan2"
+        android:textColor="@color/alb"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/cos_cumparaturi_continua_comanda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/slogan"
+        android:focusable="true"
+        android:fontFamily="@font/farsan2"
+        android:text="Continuă comanda"
+        android:textColor="@color/splash"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cos_cumparaturi_elimina"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cos_cumparaturi_elimina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/splash"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/farsan2"
+        android:text="Elimină tot"
+        android:textColor="@color/slogan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cos_cumparaturi_continua_comanda" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cos_cumparatri_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/cos_cumparaturi_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cos_cumparaturi_titlu">
+
+    </android.support.v7.widget.RecyclerView>
+</android.support.constraint.ConstraintLayout>

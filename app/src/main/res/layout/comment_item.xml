@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        card_view:cardBackgroundColor="@color/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/comm_card_view_poza_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardPreventCornerOverlap="false">
+
+                <ImageView
+                    android:id="@+id/comm_poza_profil"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@+id/postare_card_view_poza_profil"
+                    android:layout_gravity="center" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/comm_tv_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/comm_card_view_poza_profil"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-3dp"
+                android:fontFamily="@font/farsan2"
+                android:text="username"
+                android:textColor="@color/slogan"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comm_tv_continut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/comm_card_view_poza_profil"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/farsan2"
+                android:text="content"
+                android:textColor="@color/slogan"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
